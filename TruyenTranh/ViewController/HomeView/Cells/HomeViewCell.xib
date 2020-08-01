@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeViewCell" id="gTV-IL-0wX" customClass="HomeViewCell" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynk-Z1-vF7">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="220"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEg-M3-Lot" customClass="CustomImageView" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="155"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="xsa-we-EVg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tên truyện" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv0-kZ-zQh">
+                                <rect key="frame" x="4" y="165" width="122" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmy-R7-qyj">
+                                <rect key="frame" x="4" y="190" width="122" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dt6-Aq-v2J">
+                                        <rect key="frame" x="0.0" y="0.0" width="29" height="22"/>
+                                        <color key="backgroundColor" red="0.19215686269999999" green="0.66666666669999997" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="W7y-ah-oCL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke6-Nh-wPX">
+                                        <rect key="frame" x="37" y="0.0" width="29" height="22"/>
+                                        <color key="backgroundColor" red="0.19215686269999999" green="0.66666666669999997" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="S5Y-Y6-h3v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="0">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ke6-Nh-wPX" firstAttribute="top" secondItem="zmy-R7-qyj" secondAttribute="top" id="3Ox-9f-mJa"/>
+                                    <constraint firstAttribute="bottom" secondItem="ke6-Nh-wPX" secondAttribute="bottom" id="7Gl-3X-0QE"/>
+                                    <constraint firstAttribute="height" constant="22" id="Fe5-mz-lhx"/>
+                                    <constraint firstItem="ke6-Nh-wPX" firstAttribute="leading" secondItem="dt6-Aq-v2J" secondAttribute="trailing" constant="8" id="LJF-kq-FuT"/>
+                                    <constraint firstItem="dt6-Aq-v2J" firstAttribute="leading" secondItem="zmy-R7-qyj" secondAttribute="leading" id="NOV-u2-sAT"/>
+                                    <constraint firstAttribute="bottom" secondItem="dt6-Aq-v2J" secondAttribute="bottom" id="Qu1-IK-igx"/>
+                                    <constraint firstItem="dt6-Aq-v2J" firstAttribute="top" secondItem="zmy-R7-qyj" secondAttribute="top" id="tLa-Ao-0rd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zmy-R7-qyj" firstAttribute="top" secondItem="iv0-kZ-zQh" secondAttribute="bottom" constant="8" id="8AU-2X-fuW"/>
+                            <constraint firstAttribute="bottom" secondItem="zmy-R7-qyj" secondAttribute="bottom" constant="8" id="ClU-RM-1ow"/>
+                            <constraint firstItem="zmy-R7-qyj" firstAttribute="leading" secondItem="ynk-Z1-vF7" secondAttribute="leading" constant="4" id="IXn-rK-ECO"/>
+                            <constraint firstItem="eEg-M3-Lot" firstAttribute="leading" secondItem="ynk-Z1-vF7" secondAttribute="leading" id="ONY-lt-uVz"/>
+                            <constraint firstAttribute="trailing" secondItem="iv0-kZ-zQh" secondAttribute="trailing" constant="4" id="PfT-0S-vS4"/>
+                            <constraint firstItem="iv0-kZ-zQh" firstAttribute="leading" secondItem="ynk-Z1-vF7" secondAttribute="leading" constant="4" id="UmG-wG-haZ"/>
+                            <constraint firstAttribute="trailing" secondItem="eEg-M3-Lot" secondAttribute="trailing" id="aal-gu-Naq"/>
+                            <constraint firstItem="iv0-kZ-zQh" firstAttribute="top" secondItem="eEg-M3-Lot" secondAttribute="bottom" constant="10" id="bmW-4K-pEr"/>
+                            <constraint firstAttribute="trailing" secondItem="zmy-R7-qyj" secondAttribute="trailing" constant="4" id="lp0-gD-g59"/>
+                            <constraint firstItem="eEg-M3-Lot" firstAttribute="top" secondItem="ynk-Z1-vF7" secondAttribute="top" id="mn0-lz-VC5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ynk-Z1-vF7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1zD-Vn-r2w"/>
+                <constraint firstItem="ynk-Z1-vF7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GOP-rb-fTa"/>
+                <constraint firstAttribute="trailing" secondItem="ynk-Z1-vF7" secondAttribute="trailing" id="Pc3-GS-NoM"/>
+                <constraint firstAttribute="bottom" secondItem="ynk-Z1-vF7" secondAttribute="bottom" id="yzl-d3-8M0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="128" height="184"/>
+            <connections>
+                <outlet property="btnLike" destination="ke6-Nh-wPX" id="qmc-yI-e8q"/>
+                <outlet property="btnView" destination="dt6-Aq-v2J" id="QhG-2L-dHb"/>
+                <outlet property="imageThumb" destination="eEg-M3-Lot" id="omE-45-iXL"/>
+                <outlet property="lblTitle" destination="iv0-kZ-zQh" id="TdX-tK-5Sc"/>
+                <outlet property="mySpaceHeight" destination="xsa-we-EVg" id="aCd-tw-vyg"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="148.66071428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

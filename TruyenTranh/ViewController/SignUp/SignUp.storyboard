@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signup View Controller-->
+        <scene sceneID="1oc-kr-OQl">
+            <objects>
+                <viewController storyboardIdentifier="SignupViewController" id="Gy5-lZ-OkI" customClass="SignupViewController" customModule="Truyen_Sieu_Hay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hu4-9a-0lr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tên Đăng Nhập" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zA3-5O-GU9" customClass="FWFloatingLabelTextField" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="45" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật Khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZPG-HT-YcX" customClass="FWFloatingLabelTextField" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="95" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập Lại Mật Khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SjQ-LK-Ezv" customClass="FWFloatingLabelTextField" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="145" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nam" borderStyle="roundedRect" placeholder="Giới Tính" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EmS-Uj-v3G" customClass="FWFloatingLabelTextField" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="195" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IvV-aa-cgu" customClass="FWFloatingLabelTextField" customModule="Truyen_Sieu_Hay" customModuleProvider="target">
+                                <rect key="frame" x="16" y="195" width="288" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POp-JW-kOf">
+                                <rect key="frame" x="16" y="245" width="288" height="44"/>
+                                <color key="backgroundColor" red="0.25882352941176467" green="0.57647058823529407" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ooM-W8-mPZ"/>
+                                </constraints>
+                                <state key="normal" title="Đăng Ký">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doRegister:" destination="Gy5-lZ-OkI" eventType="touchUpInside" id="zSV-Nl-j0W"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2I-T3-y0N">
+                                <rect key="frame" x="16" y="195" width="288" height="34"/>
+                                <connections>
+                                    <action selector="selectGender" destination="Gy5-lZ-OkI" eventType="touchUpInside" id="1Ih-oy-t9J"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZPG-HT-YcX" firstAttribute="centerX" secondItem="YvG-ra-HJh" secondAttribute="centerX" id="035-nE-Vq9"/>
+                            <constraint firstItem="IvV-aa-cgu" firstAttribute="top" secondItem="SjQ-LK-Ezv" secondAttribute="bottom" constant="16" id="AIl-P3-cfS"/>
+                            <constraint firstItem="EmS-Uj-v3G" firstAttribute="top" secondItem="SjQ-LK-Ezv" secondAttribute="bottom" constant="16" id="BBq-3A-GnR"/>
+                            <constraint firstItem="ZPG-HT-YcX" firstAttribute="top" secondItem="zA3-5O-GU9" secondAttribute="bottom" constant="16" id="Hkg-jl-14B"/>
+                            <constraint firstItem="POp-JW-kOf" firstAttribute="top" secondItem="IvV-aa-cgu" secondAttribute="bottom" constant="16" id="Ik1-ns-jxM"/>
+                            <constraint firstItem="POp-JW-kOf" firstAttribute="leading" secondItem="IvV-aa-cgu" secondAttribute="leading" id="JJ3-4z-ywE"/>
+                            <constraint firstItem="EmS-Uj-v3G" firstAttribute="leading" secondItem="SjQ-LK-Ezv" secondAttribute="leading" id="LTN-Zm-9xq"/>
+                            <constraint firstItem="S2I-T3-y0N" firstAttribute="trailing" secondItem="EmS-Uj-v3G" secondAttribute="trailing" id="M0X-FM-0jD"/>
+                            <constraint firstItem="SjQ-LK-Ezv" firstAttribute="centerX" secondItem="YvG-ra-HJh" secondAttribute="centerX" id="NuY-Lb-3MD"/>
+                            <constraint firstItem="ZPG-HT-YcX" firstAttribute="leading" secondItem="zA3-5O-GU9" secondAttribute="leading" id="Rxr-Pw-RVk"/>
+                            <constraint firstItem="IvV-aa-cgu" firstAttribute="centerX" secondItem="YvG-ra-HJh" secondAttribute="centerX" id="Uhg-zr-Lcp"/>
+                            <constraint firstItem="EmS-Uj-v3G" firstAttribute="centerX" secondItem="YvG-ra-HJh" secondAttribute="centerX" id="Ytg-qT-G6T"/>
+                            <constraint firstItem="POp-JW-kOf" firstAttribute="centerX" secondItem="YvG-ra-HJh" secondAttribute="centerX" id="auD-gV-NqU"/>
+                            <constraint firstItem="S2I-T3-y0N" firstAttribute="top" secondItem="EmS-Uj-v3G" secondAttribute="top" id="bvg-Yg-d0n"/>
+                            <constraint firstItem="zA3-5O-GU9" firstAttribute="top" secondItem="YvG-ra-HJh" secondAttribute="top" constant="45" id="ezu-O3-fmn"/>
+                            <constraint firstItem="zA3-5O-GU9" firstAttribute="centerX" secondItem="YvG-ra-HJh" secondAttribute="centerX" id="j8V-ta-9w4"/>
+                            <constraint firstItem="SjQ-LK-Ezv" firstAttribute="top" secondItem="ZPG-HT-YcX" secondAttribute="bottom" constant="16" id="nsy-iA-mll"/>
+                            <constraint firstItem="zA3-5O-GU9" firstAttribute="leading" secondItem="YvG-ra-HJh" secondAttribute="leading" constant="16" id="ou7-ON-KBp"/>
+                            <constraint firstItem="S2I-T3-y0N" firstAttribute="leading" secondItem="EmS-Uj-v3G" secondAttribute="leading" id="pxO-6y-mQn"/>
+                            <constraint firstItem="IvV-aa-cgu" firstAttribute="leading" secondItem="EmS-Uj-v3G" secondAttribute="leading" id="uTS-MV-tCW"/>
+                            <constraint firstItem="SjQ-LK-Ezv" firstAttribute="leading" secondItem="ZPG-HT-YcX" secondAttribute="leading" id="v7d-qB-7ib"/>
+                            <constraint firstItem="S2I-T3-y0N" firstAttribute="bottom" secondItem="EmS-Uj-v3G" secondAttribute="bottom" id="wsl-mB-eeg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YvG-ra-HJh"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="IvV-aa-cgu" id="hO4-hJ-H6i"/>
+                        <outlet property="txtGender" destination="EmS-Uj-v3G" id="Cal-Mm-KIt"/>
+                        <outlet property="txtPassword" destination="ZPG-HT-YcX" id="XwI-Yv-8qG"/>
+                        <outlet property="txtRePassword" destination="SjQ-LK-Ezv" id="4nZ-HG-zJc"/>
+                        <outlet property="txtUsername" destination="zA3-5O-GU9" id="dFC-35-0JG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ed-YG-UAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="188"/>
+        </scene>
+    </scenes>
+</document>
